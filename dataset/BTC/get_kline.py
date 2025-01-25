@@ -26,7 +26,7 @@ def get_binance_data(symbol, start_str, end_str, interval):
             'endTime': end_time
         }
         print(url, params)
-        response = requests.get(url, params=params)
+        response = requests.get(url, params=params, verify=False)
         if response.status_code == 200:
             data = response.json()
             if not data:
