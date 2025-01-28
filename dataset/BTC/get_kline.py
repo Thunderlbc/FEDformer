@@ -101,4 +101,4 @@ for timeframe in timeframes:
     df['delta_taker_buy_base_volume_ratio'] = df['Taker_buy_base_volume'].diff() / df['Taker_buy_base_volume'].shift(1)
     df['delta_taker_buy_quote_volume_ratio'] = df['Taker_buy_quote_volume'].diff() / df['Taker_buy_quote_volume'].shift(1)
     # 1: 是扔掉第一行，因为第一行没有前一行
-    df[1:].to_csv(f'btcusdt_{timeframe}_2025_delta.csv', index=False)
+    df[['Open_time', 'delta_open_price_ratio', 'delta_high_price_ratio', 'delta_low_price_ratio', 'delta_volume_ratio', 'delta_quote_asset_volume_ratio', 'delta_number_of_trades_ratio', 'delta_taker_buy_base_volume_ratio', 'delta_taker_buy_quote_volume_ratio', 'delta_close_price_ratio']][1:].to_csv(f'btcusdt_{timeframe}_2025_delta.csv', index=False)
