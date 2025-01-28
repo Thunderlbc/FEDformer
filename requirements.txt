@@ -1,28 +1,74 @@
-einops
-absl-py
-#absl-py==1.2.0
-einops
-#einops==0.4.1
-h5py
-#h5py==3.7.0
-keopscore
-#keopscore==2.1
-opt-einsum
-#opt-einsum==3.3.0
-pandas
-#pandas==1.4.2 
-pytorch-wavelet 
-PyWavelets
-#PyWavelets==1.4.1
-scikit-image
-#scikit-image==0.19.3
-#scikit-learn==1.0.2
-scikit-learn
-scipy
-#scipy==1.7.3
-statsmodels
-#statsmodels==0.13.2
-sympy
-#sympy==1.11.1
-torch
-#torch==1.9.0
+absl-py==2.1.0
+asttokens==3.0.0
+certifi==2024.12.14
+charset-normalizer==3.4.1
+contourpy==1.3.1
+cycler==0.12.1
+decorator==5.1.1
+einops==0.8.0
+executing==2.1.0
+filelock==3.16.1
+fonttools==4.55.3
+fsspec==2024.12.0
+h5py==3.12.1
+idna==3.10
+imageio==2.37.0
+ipython==8.31.0
+jedi==0.19.2
+Jinja2==3.1.5
+joblib==1.4.2
+keopscore==2.2.3
+kiwisolver==1.4.8
+lazy_loader==0.4
+MarkupSafe==3.0.2
+matplotlib==3.10.0
+matplotlib-inline==0.1.7
+mpmath==1.3.0
+networkx==3.4.2
+numpy==2.2.1
+nvidia-cublas-cu12 @ file:///data2/luka/nvidia_cublas_cu12-12.4.5.8-py3-none-manylinux2014_x86_64.whl#sha256=2fc8da60df463fdefa81e323eef2e36489e1c94335b5358bcb38360adf75ac9b
+nvidia-cuda-cupti-cu12==12.4.127
+nvidia-cuda-nvrtc-cu12==12.4.127
+nvidia-cuda-runtime-cu12==12.4.127
+nvidia-cudnn-cu12 @ file:///data2/luka/nvidia_cudnn_cu12-9.1.0.70-py3-none-manylinux2014_x86_64.whl#sha256=165764f44ef8c61fcdfdfdbe769d687e06374059fbb388b6c89ecb0e28793a6f
+nvidia-cufft-cu12 @ file:///data2/luka/nvidia_cufft_cu12-11.2.1.3-py3-none-manylinux2014_x86_64.whl#sha256=f083fc24912aa410be21fa16d157fed2055dab1cc4b6934a0e03cba69eb242b9
+nvidia-curand-cu12 @ file:///data2/luka/nvidia_curand_cu12-10.3.5.147-py3-none-manylinux2014_x86_64.whl#sha256=a88f583d4e0bb643c49743469964103aa59f7f708d862c3ddb0fc07f851e3b8b
+nvidia-cusolver-cu12 @ file:///data2/luka/nvidia_cusolver_cu12-11.6.1.9-py3-none-manylinux2014_x86_64.whl#sha256=19e33fa442bcfd085b3086c4ebf7e8debc07cfe01e11513cc6d332fd918ac260
+nvidia-cusparse-cu12 @ file:///data2/luka/nvidia_cusparse_cu12-12.3.1.170-py3-none-manylinux2014_x86_64.whl#sha256=ea4f11a2904e2a8dc4b1833cc1b5181cde564edd0d5cd33e3c168eff2d1863f1
+nvidia-nccl-cu12 @ file:///data2/luka/nvidia_nccl_cu12-2.21.5-py3-none-manylinux2014_x86_64.whl#sha256=8579076d30a8c24988834445f8d633c697d42397e92ffc3f63fa26766d25e0a0
+nvidia-nvjitlink-cu12 @ file:///data2/luka/nvidia_nvjitlink_cu12-12.4.127-py3-none-manylinux2014_x86_64.whl#sha256=06b3b9b25bf3f8af351d664978ca26a16d2c5127dbd53c0497e28d1fb9611d57
+nvidia-nvtx-cu12==12.4.127
+opt_einsum==3.4.0
+packaging==24.2
+pandas==2.2.3
+parso==0.8.4
+patsy==1.0.1
+pexpect==4.9.0
+pillow==11.1.0
+prompt_toolkit==3.0.48
+ptyprocess==0.7.0
+pure_eval==0.2.3
+Pygments==2.19.1
+pyparsing==3.2.1
+python-dateutil==2.9.0.post0
+pytorch-wavelet==1.2
+pytz==2024.2
+PyWavelets==1.8.0
+requests==2.32.3
+scikit-image==0.25.0
+scikit-learn==1.6.1
+scipy @ file:///data2/luka/scipy-1.15.1-cp313-cp313-manylinux_2_17_x86_64.manylinux2014_x86_64.whl#sha256=070d10654f0cb6abd295bc96c12656f948e623ec5f9a4eab0ddb1466c000716e
+setuptools==75.8.0
+six==1.17.0
+stack-data==0.6.3
+statsmodels==0.14.4
+sympy==1.13.1
+threadpoolctl==3.5.0
+tifffile==2025.1.10
+torch @ file:///data2/luka/torch-2.5.1-cp313-cp313-manylinux1_x86_64.whl#sha256=9b61edf3b4f6e3b0e0adda8b3960266b9009d02b37555971f4d1c8f7a05afed7
+traitlets==5.14.3
+typing_extensions==4.12.2
+tzdata==2024.2
+urllib3==2.3.0
+wcwidth==0.2.13
+wheel==0.44.0
