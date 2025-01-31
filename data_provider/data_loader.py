@@ -12,7 +12,7 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-class Dataset_BTCUSDT(Dataset):
+class Dataset_BTCUSDT_train(Dataset):
     """
     # 描述：
      需要仿照Dataset_ETT_hour类，实现一个能够读取BTCUSDT_1m_2025_delta.csv文件的类
@@ -23,7 +23,7 @@ class Dataset_BTCUSDT(Dataset):
     """
     def __init__(self, root_path, flag='train', size=None,
                  features='MS', data_path='BTCUSDT_1m_2025_delta.csv',
-                 target='delta_close_price_ratio', freq='1m', date_col='Open_time'):
+                 target='delta_close_price_ratio', freq='1m', date_col='Open_time', timeenc=None, ):
         # size [seq_len, label_len, pred_len]
         # info
         if size == None:
@@ -481,7 +481,7 @@ class Dataset_Pred(Dataset):
         return self.scaler.inverse_transform(data)
 
 if __name__ == '__main__':
-    d = Dataset_BTCUSDT(root_path='./dataset/BTC/', flag='train', size=[96, 48, 96], features='M', data_path='BTCUSDT_1m_2025_delta.csv', target='delta_close_price_ratio', date_col='Open_time')
+    d = Dataset_BTCUSDT_train(root_path='./dataset/BTC/', flag='train', size=[96, 48, 96], features='M', data_path='BTCUSDT_1m_2025_delta.csv', target='delta_close_price_ratio', date_col='Open_time')
 
     for i, (batch_x, batch_y, batch_x_mark, batch_y_mark) in enumerate(d):
         print(batch_x.shape, batch_y.shape, batch_x_mark.shape, batch_y_mark.shape)
